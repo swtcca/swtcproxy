@@ -22,14 +22,14 @@
 
 ## 使用
 
-### docker
-1. `docker run --rm -e UPSTREAM=wss://s.jingtum.com:5020 -e DEBUG=true -d -p 5080:5080 swtcproxy`
+### docker (通过环境变量设置上游/调试/基于IP的访问限制)
+1. `docker run --rm -e UPSTREAM=wss://s.jingtum.com:5020 -e DEBUG=true -e RATE=100 -d -p 5080:5080 lospringliu/swtcproxy`
 
 ### 源代码
 1. `git clone https://github.com/swtcca/swtcproxy.git`
 2. `cd swtcproxy`
 3. `npm install`
-4. `npm run start`
+4. `env UPSTREAM=wss://s.jingtum.com:5020 RATE=100 npm run start`
 5. 本地文档： http://localhost:5080/swagger
 > - 相应修改 `static/swagger.json` 的`server.url`
 
