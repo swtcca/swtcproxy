@@ -5,6 +5,7 @@
 - [http://swtcproxy.swtclib.ca:5080/swagger](http://swtcproxy.swtclib.ca:5080/swagger)
 - [https://app.swaggerhub.com/apis/lospringliu/swtc-proxy/v3](https://app.swaggerhub.com/apis/lospringliu/swtc-proxy/v3)
 - [https://swtcdoc.netlify.com](https://swtcdoc.netlify.com)
+- [docker image](https://hub.docker.com/repository/docker/lospringliu/swtcproxy)
 
 ## 描述
 
