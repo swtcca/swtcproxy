@@ -3,7 +3,7 @@ FROM node:dubnium-alpine
 MAINTAINER Xinchun Liu <lospringliu@gmail.com>
 
 ENV UPSTREAM=
-ENV PORT=
+# ENV PORT=
 ENV DEBUG=
 
 WORKDIR /apps

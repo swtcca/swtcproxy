@@ -23,7 +23,7 @@
 ## 使用
 
 ### docker
-1. `docker run --rm -e UPSTREAM=wss://s.jingtum.com:5020 -d -p 5080:5080 swtcproxy`
+1. `docker run --rm -e UPSTREAM=wss://s.jingtum.com:5020 -e DEBUG=true -d -p 5080:5080 swtcproxy`
 
 ### 源代码
 1. `git clone https://github.com/swtcca/swtcproxy.git`
