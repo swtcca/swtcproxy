@@ -3,6 +3,7 @@ FROM node:dubnium-alpine
 MAINTAINER Xinchun Liu <lospringliu@gmail.com>
 
 ENV UPSTREAM=
+ENV RATE=
 # ENV PORT=
 ENV DEBUG=
 
