@@ -9,7 +9,7 @@ spec:
   selector:
     matchLabels:
       app: swtcproxy
-  replicas: 3
+  replicas: 2
   template:
     metadata:
       labels:
@@ -28,6 +28,18 @@ spec:
           value: "true"
         - name: RATE
           value: "300"
+        livenessProbe:
+          httpGet:
+            path: /v3
+            port: 5080
+          initialDelaySeconds: 30
+          timeoutSeconds: 2
+        readinessProbe:
+          httpGet:
+            path: /v3/ledgers/closed
+            port: 5080
+          initialDelaySeconds: 10
+          timeoutSeconds: 2
   
 ---
 
