@@ -1,4 +1,4 @@
-import { web, router, state } from "swtc-proxy"
+import { web, router, state } from "@swtc/proxy"
 const request = require("supertest")
 const sleep = time => new Promise(res => setTimeout(() => res(), time || 1))
 state.config.value.server = "ws://swtcproxy.swtclib.ca:5020"

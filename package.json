@@ -1,6 +1,6 @@
 {
   "name": "swtc-proxy",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "proxy to swtc-lib",
   "main": "start.js",
   "scripts": {
@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "swtc-proxy": "^1.0.0"
+    "@swtc/proxy": "^1.0.9"
   },
   "devDependencies": {
     "jest": "^24.9.0",
